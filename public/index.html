@@ -7,12 +7,17 @@
   <script type="text/javascript">
     var app = angular.module('twiitss', []);
 
-    app.controller('twiitssCtrl', function($scope, $http) {
-      $http.get('/mes').then(function (response) {
-        console.log(response.data);
-      });
+    app.controller('twiitssCtrl', function($scope) {
+      $scope.mes = [
+      'happy 4th!',
+      'amazing fireworks',
+       'happy BBQ day yay!',
+       'happy 4th! Beer!!!!!',
+       'hello world'
+      ];
     });
 
+    console.log(mes)
   </script>
   <title>twiitss</title>
 </head>
